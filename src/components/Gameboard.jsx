@@ -1,8 +1,9 @@
+import '../styles/Gameboard.css';
 import useData from '../hooks/useData';
 import Card from './Card';
 
 export default function Gameboard() {
-  const url = 'https://potterapi-fedeperin.vercel.app/en/characters?max=21';
+  const url = 'https://potterapi-fedeperin.vercel.app/en/characters?max=20';
   const results = useData(url);
   const cards = [];
 
@@ -14,7 +15,7 @@ export default function Gameboard() {
 
   return (
     <main>
-      {!results && <h2>Loading...</h2>}
+      {!results && <h2 className="loading">Loading...</h2>}
       {results && cards}
     </main>
   );
