@@ -1,10 +1,21 @@
+import useData from '../hooks/useData';
 import Card from './Card';
 
 export default function Gameboard() {
+  const url = 'https://potterapi-fedeperin.vercel.app/en/characters?max=21';
+  const results = useData(url);
+  const cards = [];
+
+  if (results) {
+    for (const result of results) {
+      cards.push(<Card result={result} key={result.fullName} />);
+    }
+  }
+
   return (
     <main>
-      <h2>Gameboard</h2>
-      <Card />
+      {!results && <h2>Loading...</h2>}
+      {results && cards}
     </main>
   );
 }

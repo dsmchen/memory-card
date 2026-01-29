@@ -1,3 +1,7 @@
-export default function Card() {
-  return <h2>Card</h2>;
+export default function Card({ result }) {
+  return (
+    <div>
+      <h2>{result.fullName}</h2>
+    </div>
+  );
 }
