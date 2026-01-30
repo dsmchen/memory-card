@@ -1,3 +1,5 @@
+import '../styles/scoreboard.css';
+
 export default function Scoreboard({ selectedCards }) {
   const currentScore = selectedCards.length;
 

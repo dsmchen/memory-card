@@ -1,0 +1,11 @@
+/*
+  Tablet
+*/
+
+@media screen and (width >= 40em) {
+  .scoreboard {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+  }
+}
