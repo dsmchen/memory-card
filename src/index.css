@@ -55,7 +55,9 @@ h1 {
   line-height: 1;
 }
 
-h2 {
+h2,
+h3,
+h4 {
   font-family: Lumos, 'Times New Roman', Times, serif;
   line-height: 1;
 }
