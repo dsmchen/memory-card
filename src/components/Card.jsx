@@ -5,11 +5,17 @@ export default function Card({
   selectedCards,
   setSelectedCards,
   setIsGameOver,
+  highestScore,
+  setIsHighestScore,
 }) {
   function handleClick(e) {
     const cardId = e.target.closest('.card').id;
     if (selectedCards.includes(cardId)) {
       setIsGameOver(true);
+      const currentScore = selectedCards.length;
+      setIsHighestScore(
+        currentScore > highestScore ? currentScore : highestScore,
+      );
     } else {
       setSelectedCards([...selectedCards, cardId]);
     }

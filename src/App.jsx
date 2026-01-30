@@ -8,17 +8,23 @@ import GameOver from './components/GameOver';
 function App() {
   const [selectedCards, setSelectedCards] = useState([]);
   const [isGameOver, setIsGameOver] = useState(false);
+  const [highestScore, setIsHighestScore] = useState(0);
 
   return (
     <>
       <Header />
       {!isGameOver ? (
         <>
-          <Scoreboard selectedCards={selectedCards} />
+          <Scoreboard
+            selectedCards={selectedCards}
+            highestScore={highestScore}
+          />
           <Gameboard
             selectedCards={selectedCards}
             setSelectedCards={setSelectedCards}
             setIsGameOver={setIsGameOver}
+            highestScore={highestScore}
+            setIsHighestScore={setIsHighestScore}
           />
         </>
       ) : (
