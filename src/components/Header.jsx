@@ -1,5 +1,3 @@
-import '../styles/Header.css';
-
 export default function Header() {
   return (
     <header>
@@ -9,9 +7,6 @@ export default function Header() {
         <br />
         Memory Card Game
       </h2>
-      <p>
-        Get points by clicking on a card, but don't click on any more than once!
-      </p>
     </header>
   );
 }
