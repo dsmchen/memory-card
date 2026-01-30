@@ -1,5 +1,6 @@
 import '../styles/Gameboard.css';
 import useData from '../hooks/useData';
+import shuffle from '../utils/shuffle';
 import Card from './Card';
 
 export default function Gameboard() {
@@ -8,6 +9,7 @@ export default function Gameboard() {
   const cards = [];
 
   if (results) {
+    shuffle(results);
     for (const result of results) {
       cards.push(<Card result={result} key={result.fullName} />);
     }
