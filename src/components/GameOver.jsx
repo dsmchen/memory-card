@@ -18,7 +18,7 @@ export default function GameOver({
       <h3>Final Score: {currentScore}</h3>
       <button className="button primary" onClick={handleClick}>
         <h4>
-          <span class="front">Restart Game</span>
+          <span className="front">Restart Game</span>
         </h4>
       </button>
     </div>

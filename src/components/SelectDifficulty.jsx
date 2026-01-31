@@ -51,7 +51,7 @@ export default function SelectDifficulty({
       <ul>{difficultyLevelsJsx}</ul>
       <button className="button primary" onClick={handleStartClick}>
         <h4>
-          <span class="front">Start Game</span>
+          <span className="front">Start Game</span>
         </h4>
       </button>
     </div>
