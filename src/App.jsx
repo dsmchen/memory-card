@@ -8,7 +8,7 @@ import GameOver from './components/GameOver';
 
 function App() {
   const [showSelectDifficulty, setShowSelectDifficulty] = useState(true);
-  const [difficulty, setDifficulty] = useState(6);
+  const [difficulty, setDifficulty] = useState(4);
   const [selectedCards, setSelectedCards] = useState([]);
   const [isGameOver, setIsGameOver] = useState(false);
   const [highestScore, setIsHighestScore] = useState(0);

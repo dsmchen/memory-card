@@ -13,7 +13,7 @@ export default function SelectDifficulty({
     setSelectedId(e.target.textContent);
     switch (e.target.textContent) {
       case 'Easy':
-        setDifficulty(6);
+        setDifficulty(4);
         break;
       case 'Medium':
         setDifficulty(12);
@@ -22,7 +22,7 @@ export default function SelectDifficulty({
         setDifficulty(24);
         break;
       default:
-        setDifficulty(6);
+        setDifficulty(4);
         break;
     }
   }
