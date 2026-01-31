@@ -46,7 +46,7 @@ export default function SelectDifficulty({
   );
 
   return (
-    <div className="select-difficulty cta-container">
+    <div className="select-difficulty main-container">
       <h2>Select Difficulty</h2>
       <ul>{difficultyLevelsJsx}</ul>
       <button className="button primary" onClick={handleStartClick}>
