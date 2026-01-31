@@ -8,13 +8,8 @@
   gap: 1rem;
 }
 
-.gameboard .loading,
-.gameboard p {
+.gameboard .loading {
   grid-column: span 2;
-}
-
-.gameboard p {
-  margin-bottom: 2rem;
 }
 
 /*
@@ -26,8 +21,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .gameboard .loading,
-  .gameboard p {
+  .gameboard .loading {
     grid-column: span 3;
   }
 }
@@ -41,8 +35,7 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .gameboard .loading,
-  .gameboard p {
+  .gameboard .loading {
     grid-column: span 4;
   }
 }

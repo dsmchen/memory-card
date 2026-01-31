@@ -3,7 +3,7 @@
 */
 
 @media screen and (width >= 40em) {
-  .scoreboard {
+  .score-container {
     display: flex;
     gap: 4rem;
     justify-content: center;

@@ -34,17 +34,7 @@ export default function Gameboard({
 
   return (
     <div className="gameboard">
-      {!results ? (
-        <h2 className="loading">Loading...</h2>
-      ) : (
-        <>
-          <p>
-            Get points by clicking on a card, but don't click on any more than
-            once!
-          </p>
-          {cards}
-        </>
-      )}
+      {!results ? <h2 className="loading">Loading...</h2> : <>{cards}</>}
     </div>
   );
 }
