@@ -8,8 +8,9 @@ export default function Gameboard({
   selectedCards,
   setSelectedCards,
   setIsGameOver,
+  setIsWin,
   highestScore,
-  setIsHighestScore,
+  setHighestScore,
 }) {
   const url = `https://potterapi-fedeperin.vercel.app/en/characters?max=${difficulty}`;
   const results = useData(url);
@@ -25,8 +26,10 @@ export default function Gameboard({
           selectedCards={selectedCards}
           setSelectedCards={setSelectedCards}
           setIsGameOver={setIsGameOver}
+          setIsWin={setIsWin}
           highestScore={highestScore}
-          setIsHighestScore={setIsHighestScore}
+          setHighestScore={setHighestScore}
+          difficulty={difficulty}
         />,
       );
     }

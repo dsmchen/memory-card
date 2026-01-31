@@ -11,7 +11,8 @@ function App() {
   const [difficulty, setDifficulty] = useState(4);
   const [selectedCards, setSelectedCards] = useState([]);
   const [isGameOver, setIsGameOver] = useState(false);
-  const [highestScore, setIsHighestScore] = useState(0);
+  const [isWin, setIsWin] = useState(false);
+  const [highestScore, setHighestScore] = useState(0);
 
   return (
     <>
@@ -33,8 +34,9 @@ function App() {
               selectedCards={selectedCards}
               setSelectedCards={setSelectedCards}
               setIsGameOver={setIsGameOver}
+              setIsWin={setIsWin}
               highestScore={highestScore}
-              setIsHighestScore={setIsHighestScore}
+              setHighestScore={setHighestScore}
             />
           </>
         ) : (
@@ -42,6 +44,8 @@ function App() {
             selectedCards={selectedCards}
             setSelectedCards={setSelectedCards}
             setIsGameOver={setIsGameOver}
+            isWin={isWin}
+            setIsWin={setIsWin}
             setShowSelectDifficulty={setShowSelectDifficulty}
           />
         )}

@@ -5,19 +5,28 @@ export default function Card({
   selectedCards,
   setSelectedCards,
   setIsGameOver,
+  setIsWin,
   highestScore,
-  setIsHighestScore,
+  setHighestScore,
+  difficulty,
 }) {
+  function getHighestScore(num) {
+    const currentScore = selectedCards.length + num;
+    setHighestScore(currentScore > highestScore ? currentScore : highestScore);
+  }
+
   function handleClick(e) {
     const cardId = e.target.closest('.card').id;
     if (selectedCards.includes(cardId)) {
       setIsGameOver(true);
-      const currentScore = selectedCards.length;
-      setIsHighestScore(
-        currentScore > highestScore ? currentScore : highestScore,
-      );
+      getHighestScore(0);
     } else {
       setSelectedCards([...selectedCards, cardId]);
+      if (selectedCards.length + 1 === difficulty) {
+        setIsGameOver(true);
+        setIsWin(true);
+        getHighestScore(1);
+      }
     }
   }
 

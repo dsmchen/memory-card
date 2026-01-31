@@ -16,4 +16,3 @@
 - API: [PotterAPI](https://github.com/fedeperin/potterapi)
 - Shuffle Code Snippet: [Stack Overflow - How to randomize (shuffle) a JavaScript array?](https://stackoverflow.com/a/2450976)
 - Inspiration: [PokeMatch](https://pokematchmemorygame.netlify.app/)
-
