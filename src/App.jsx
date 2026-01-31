@@ -16,34 +16,36 @@ function App() {
   return (
     <>
       <Header />
-      {showSelectDifficulty ? (
-        <SelectDifficulty
-          setDifficulty={setDifficulty}
-          setShowSelectDifficulty={setShowSelectDifficulty}
-        />
-      ) : !isGameOver ? (
-        <>
-          <Scoreboard
-            selectedCards={selectedCards}
-            highestScore={highestScore}
+      <main>
+        {showSelectDifficulty ? (
+          <SelectDifficulty
+            setDifficulty={setDifficulty}
+            setShowSelectDifficulty={setShowSelectDifficulty}
           />
-          <Gameboard
-            difficulty={difficulty}
+        ) : !isGameOver ? (
+          <>
+            <Scoreboard
+              selectedCards={selectedCards}
+              highestScore={highestScore}
+            />
+            <Gameboard
+              difficulty={difficulty}
+              selectedCards={selectedCards}
+              setSelectedCards={setSelectedCards}
+              setIsGameOver={setIsGameOver}
+              highestScore={highestScore}
+              setIsHighestScore={setIsHighestScore}
+            />
+          </>
+        ) : (
+          <GameOver
             selectedCards={selectedCards}
             setSelectedCards={setSelectedCards}
             setIsGameOver={setIsGameOver}
-            highestScore={highestScore}
-            setIsHighestScore={setIsHighestScore}
+            setShowSelectDifficulty={setShowSelectDifficulty}
           />
-        </>
-      ) : (
-        <GameOver
-          selectedCards={selectedCards}
-          setSelectedCards={setSelectedCards}
-          setIsGameOver={setIsGameOver}
-          setShowSelectDifficulty={setShowSelectDifficulty}
-        />
-      )}
+        )}
+      </main>
     </>
   );
 }

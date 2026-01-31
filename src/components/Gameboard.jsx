@@ -33,7 +33,7 @@ export default function Gameboard({
   }
 
   return (
-    <main>
+    <div className="gameboard">
       {!results ? (
         <h2 className="loading">Loading...</h2>
       ) : (
@@ -45,6 +45,6 @@ export default function Gameboard({
           {cards}
         </>
       )}
-    </main>
+    </div>
   );
 }

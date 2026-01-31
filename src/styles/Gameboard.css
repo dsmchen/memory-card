@@ -2,18 +2,18 @@
   Mobile
 */
 
-main {
+.gameboard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-main .loading,
-main p {
+.gameboard .loading,
+.gameboard p {
   grid-column: span 2;
 }
 
-main p {
+.gameboard p {
   margin-bottom: 2rem;
 }
 
@@ -22,12 +22,12 @@ main p {
 */
 
 @media screen and (width >= 40em) {
-  main {
+  .gameboard {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  main .loading,
-  main p {
+  .gameboard .loading,
+  .gameboard p {
     grid-column: span 3;
   }
 }
@@ -37,12 +37,12 @@ main p {
 */
 
 @media screen and (width >= 70em) {
-  main {
+  .gameboard {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  main .loading,
-  main p {
+  .gameboard .loading,
+  .gameboard p {
     grid-column: span 4;
   }
 }
