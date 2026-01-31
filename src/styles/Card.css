@@ -28,3 +28,9 @@
 .card h2 {
   padding: 1rem;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}
