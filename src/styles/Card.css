@@ -3,14 +3,28 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px var(--gray-400);
+  will-change: transform;
+  transition: transform 450ms;
+}
+
+.card:hover {
+  transition: transform 150ms;
+  transform: translateY(-10px);
 }
 
 .card img {
-  width: 200px;
+  border-radius: 1rem 1rem 0 0;
 }
 
-.card ul {
-  padding-left: 0;
-  list-style: none;
-  text-align: left;
+.card .text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card h2 {
+  padding: 1rem;
 }

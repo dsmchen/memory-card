@@ -37,7 +37,9 @@ export default function Card({
   return (
     <div className="card" id={result.index} onClick={handleClick}>
       <img src={result.image} alt="" />
-      <h2>{getFullName(result.fullName)}</h2>
+      <div className="text">
+        <h2>{getFullName(result.fullName)}</h2>
+      </div>
     </div>
   );
 }

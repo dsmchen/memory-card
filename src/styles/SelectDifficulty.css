@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 1rem;
   list-style: none;
-  padding-left: 4rem;
+  padding-left: 0;
 }
 
 .select-difficulty li::before {

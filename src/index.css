@@ -4,6 +4,7 @@
 
 :root {
   --gray-200: #eee;
+  --gray-400: #bdbdbd;
   --gray-900: #212121;
   --white: #fff;
   --white-opacity-95: rgba(255, 255, 255, 95%);
@@ -148,8 +149,9 @@ body {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  max-width: 700px;
+  width: fit-content;
   margin: 0 auto;
 }
 
@@ -165,6 +167,7 @@ button.primary {
   padding: 0;
   cursor: pointer;
   outline-offset: 4px;
+  max-width: 350px;
 }
 
 button.primary .front {
