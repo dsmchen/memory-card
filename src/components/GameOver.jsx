@@ -13,11 +13,13 @@ export default function GameOver({
   }
 
   return (
-    <div className="game-over">
+    <div className="game-over cta-container">
       <h2>Game Over</h2>
       <h3>Final Score: {currentScore}</h3>
-      <button onClick={handleClick}>
-        <h4>Restart Game</h4>
+      <button className="button primary" onClick={handleClick}>
+        <h4>
+          <span class="front">Restart Game</span>
+        </h4>
       </button>
     </div>
   );

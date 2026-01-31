@@ -3,7 +3,9 @@
 */
 
 :root {
+  --gray-200: #eee;
   --gray-900: #212121;
+  --white: #fff;
   --white-opacity-95: rgba(255, 255, 255, 95%);
 }
 
@@ -140,6 +142,50 @@ body {
   background: url('./assets/images/wallpaper.jpg');
 }
 
+.cta-container {
+  background: var(--white);
+  border: 10px groove var(--gray-200);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 button {
   cursor: pointer;
+  padding: 0.5rem;
+}
+
+button.primary {
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+
+button.primary .front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+button.primary:hover .front {
+  transform: translateY(-4px);
+}
+
+button.primary:active .front {
+  transform: translateY(-2px);
+}
+
+button.secondary {
+  border: none;
+  background: none;
 }

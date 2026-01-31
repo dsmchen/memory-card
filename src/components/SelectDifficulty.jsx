@@ -1,11 +1,16 @@
+import { useState } from 'react';
+import '../styles/SelectDifficulty.css';
+
 export default function SelectDifficulty({
   setDifficulty,
   setShowSelectDifficulty,
 }) {
+  const [selectedId, setSelectedId] = useState('Easy');
   const difficultyLevels = ['Easy', 'Medium', 'Hard'];
   const difficultyLevelsJsx = [];
 
   function handleLevelClick(e) {
+    setSelectedId(e.target.textContent);
     switch (e.target.textContent) {
       case 'Easy':
         setDifficulty(6);
@@ -28,8 +33,12 @@ export default function SelectDifficulty({
 
   difficultyLevels.forEach((level) =>
     difficultyLevelsJsx.push(
-      <li key={level}>
-        <button onClick={handleLevelClick}>
+      <li
+        key={level}
+        id={level}
+        className={selectedId === level ? 'selected' : ''}
+      >
+        <button className="button secondary" onClick={handleLevelClick}>
           <h3>{level}</h3>
         </button>
       </li>,
@@ -37,11 +46,13 @@ export default function SelectDifficulty({
   );
 
   return (
-    <div>
+    <div className="select-difficulty cta-container">
       <h2>Select Difficulty</h2>
       <ul>{difficultyLevelsJsx}</ul>
-      <button onClick={handleStartClick}>
-        <h4>Start Game</h4>
+      <button className="button primary" onClick={handleStartClick}>
+        <h4>
+          <span class="front">Start Game</span>
+        </h4>
       </button>
     </div>
   );
