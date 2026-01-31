@@ -2,12 +2,14 @@ export default function GameOver({
   selectedCards,
   setSelectedCards,
   setIsGameOver,
+  setShowSelectDifficulty,
 }) {
   const currentScore = selectedCards.length;
 
   function handleClick() {
     setSelectedCards([]);
     setIsGameOver(false);
+    setShowSelectDifficulty(true);
   }
 
   return (

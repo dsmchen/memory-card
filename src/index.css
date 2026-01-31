@@ -130,3 +130,11 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+/*
+  Shared
+*/
+
+button {
+  cursor: pointer;
+}

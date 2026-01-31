@@ -4,13 +4,14 @@ import shuffle from '../utils/shuffle';
 import Card from './Card';
 
 export default function Gameboard({
+  difficulty,
   selectedCards,
   setSelectedCards,
   setIsGameOver,
   highestScore,
   setIsHighestScore,
 }) {
-  const url = 'https://potterapi-fedeperin.vercel.app/en/characters?max=20';
+  const url = `https://potterapi-fedeperin.vercel.app/en/characters?max=${difficulty}`;
   const results = useData(url);
   const cards = [];
 
