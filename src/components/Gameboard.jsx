@@ -34,7 +34,13 @@ export default function Gameboard({
 
   return (
     <div className="gameboard">
-      {!results ? <h2 className="loading">Loading...</h2> : <>{cards}</>}
+      {!results ? (
+        <div className="heading-container">
+          <h2 className="loading">Loading...</h2>
+        </div>
+      ) : (
+        <>{cards}</>
+      )}
     </div>
   );
 }

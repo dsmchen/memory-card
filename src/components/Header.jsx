@@ -1,9 +1,7 @@
-import '../styles/Header.css';
-
 export default function Header() {
   return (
     <header>
-      <div className="header-container">
+      <div className="heading-container">
         <h1>Harry Potter</h1>
         <h2>
           and the
