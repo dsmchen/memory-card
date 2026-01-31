@@ -4,6 +4,7 @@
 
 :root {
   --gray-900: #212121;
+  --white-opacity-95: rgba(255, 255, 255, 95%);
 }
 
 /*
@@ -134,6 +135,10 @@ h6 {
 /*
   Shared
 */
+
+body {
+  background: url('./assets/images/wallpaper.jpg');
+}
 
 button {
   cursor: pointer;

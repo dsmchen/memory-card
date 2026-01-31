@@ -1,0 +1,8 @@
+header .container {
+  background: var(--white-opacity-95);
+  border-radius: 50%;
+  box-shadow: 0 0 1rem 1rem var(--white-opacity-95);
+  padding: 2rem;
+  width: fit-content;
+  margin: 0 auto;
+}
