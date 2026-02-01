@@ -1,4 +1,4 @@
-import '../styles/scoreboard.css';
+import '../styles/Scoreboard.css';
 
 export default function Scoreboard({ selectedCards, highestScore }) {
   const currentScore = selectedCards.length;
