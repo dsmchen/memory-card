@@ -5,6 +5,7 @@ export default function GameOver({
   isWin,
   setIsWin,
   setShowSelectDifficulty,
+  setDifficulty,
 }) {
   const currentScore = selectedCards.length;
 
@@ -13,6 +14,7 @@ export default function GameOver({
     setIsGameOver(false);
     setIsWin(false);
     setShowSelectDifficulty(true);
+    setDifficulty(4);
   }
 
   return (

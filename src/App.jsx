@@ -47,6 +47,7 @@ function App() {
             isWin={isWin}
             setIsWin={setIsWin}
             setShowSelectDifficulty={setShowSelectDifficulty}
+            setDifficulty={setDifficulty}
           />
         )}
       </main>
