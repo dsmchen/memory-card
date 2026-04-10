@@ -1,6 +1,6 @@
 # Memory Card
 
-A memory card game using React and vanilla CSS. For more information, please go to [The Odin Project: Memory Card](https://www.theodinproject.com/lessons/node-path-react-new-memory-card)
+A memory card game using React and vanilla CSS. For more information, please go to [The Odin Project: Memory Card](https://www.theodinproject.com/lessons/node-path-react-new-memory-card).
 
 ## Inspiration
 
