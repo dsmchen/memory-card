@@ -20,6 +20,7 @@ A memory card game using React and vanilla CSS. For more information, please go 
 
 - CSS Reset: [Josh W. Comeau - A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 - Colours: [Material Design - The Color System](https://m2.material.io/design/color/the-color-system.html)
+- Blink: [Phil Goud - Blinking Icon](https://codepen.io/philgoud/pen/rNaaKjR)
 - 3D Button: [Josh W. Comeau - Building a Magical 3D Button](https://www.joshwcomeau.com/animation/3d-button/)
 
 ### JavaScript
