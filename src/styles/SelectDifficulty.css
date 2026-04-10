@@ -17,6 +17,13 @@
 .select-difficulty li.selected::before {
   background: url('../assets/images/lightning-bolt.svg');
   background-size: 20px;
+  animation: blink 2s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
 }
 
 .select-difficulty li {
