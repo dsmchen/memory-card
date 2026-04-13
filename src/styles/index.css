@@ -17,8 +17,8 @@
 @font-face {
   font-family: 'Harry P';
   src:
-    url('./assets/fonts/HarryP.woff2') format('woff2'),
-    url('./assets/fonts/HarryP.woff') format('woff');
+    url('../assets/fonts/HarryP.woff2') format('woff2'),
+    url('../assets/fonts/HarryP.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,8 +27,8 @@
 @font-face {
   font-family: 'Lumos';
   src:
-    url('./assets/fonts/Lumos.woff2') format('woff2'),
-    url('./assets/fonts/Lumos.woff') format('woff');
+    url('../assets/fonts/Lumos.woff2') format('woff2'),
+    url('../assets/fonts/Lumos.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,8 +37,8 @@
 @font-face {
   font-family: 'Literata';
   src:
-    url('./assets/fonts/Literata-Regular.woff2') format('woff2'),
-    url('./assets/fonts/Literata-Regular.woff') format('woff');
+    url('../assets/fonts/Literata-Regular.woff2') format('woff2'),
+    url('../assets/fonts/Literata-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -140,7 +140,7 @@ h6 {
 */
 
 body {
-  background: url('./assets/images/wallpaper.jpg');
+  background: url('../assets/images/wallpaper.jpg');
 }
 
 .heading-container {
