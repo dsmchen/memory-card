@@ -12,11 +12,15 @@
   content: '';
   width: 20px;
   height: 20px;
+  background-size: 20px;
+}
+
+.select-difficulty li:hover::before {
+  background: url('../assets/images/lightning-bolt-outline.svg');
 }
 
 .select-difficulty li.selected::before {
   background: url('../assets/images/lightning-bolt.svg');
-  background-size: 20px;
   animation: blink 2s steps(5, start) infinite;
 }
 
