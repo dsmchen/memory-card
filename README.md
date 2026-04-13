@@ -10,20 +10,21 @@ A memory card game using React and vanilla CSS. For more information, please go 
 
 ### Assets
 
-- Fonts:
-  - [Harry Potter Fan Zone - Fonts](https://www.harrypotterfanzone.com/fonts/)
-  - [Design Research - Badass Libre Fonts By Womxn](https://www.design-research.be/by-womxn/)
-- Wallpaper: [US Wall Decor](https://uswalldecor.com/products/rmk12592rl-harry-potter-magical-icons-peel-stick-wallpaper)
-- Icons: [Material Design Icons](https://pictogrammers.com/library/mdi/)
+- [Design Research - Badass Libre Fonts By Womxn](https://www.design-research.be/by-womxn/)
+- [Harry Potter Fan Zone - Fonts](https://www.harrypotterfanzone.com/fonts/)
+- [Material Design Icons](https://pictogrammers.com/library/mdi/)
+- [US Wall Decor](https://uswalldecor.com/products/rmk12592rl-harry-potter-magical-icons-peel-stick-wallpaper)
 
 ### CSS
 
-- CSS Reset: [Josh W. Comeau - A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
-- Colours: [Material Design - The Color System](https://m2.material.io/design/color/the-color-system.html)
-- Blink: [Phil Goud - Blinking Icon](https://codepen.io/philgoud/pen/rNaaKjR)
-- 3D Button: [Josh W. Comeau - Building a Magical 3D Button](https://www.joshwcomeau.com/animation/3d-button/)
+- [Alvaro Trigo - 3D Tilt Effect Generator](https://alvarotrigo.com/fullPage/tilt-effect/)
+- [Josh W. Comeau - A Modern CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+- [Josh W. Comeau - Building a Magical 3D Button](https://www.joshwcomeau.com/animation/3d-button/)
+- [Material Design - The Color System](https://m2.material.io/design/color/the-color-system.html)
+- [Phil Goud - Blinking Icon](https://codepen.io/philgoud/pen/rNaaKjR)
 
 ### JavaScript
 
-- API: [PotterAPI](https://github.com/fedeperin/potterapi)
-- Shuffle Code Snippet: [Stack Overflow - How to randomize (shuffle) a JavaScript array?](https://stackoverflow.com/a/2450976)
+- [PotterAPI](https://github.com/fedeperin/potterapi)
+- [Stack Overflow - How to randomize (shuffle) a JavaScript array?](https://stackoverflow.com/a/2450976)
+
