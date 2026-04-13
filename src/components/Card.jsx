@@ -16,7 +16,7 @@ export default function Card({
   }
 
   function handleClick(e) {
-    const cardId = e.target.closest('.card').id;
+    const cardId = e.target.closest('.tilt-container').id;
     if (selectedCards.includes(cardId)) {
       setIsGameOver(true);
       getHighestScore(0);
@@ -44,10 +44,18 @@ export default function Card({
   }
 
   return (
-    <div className="card" id={result.index} onClick={handleClick}>
-      <img src={result.image} alt="" />
-      <div className="text">
-        <h2>{getFullName(result.fullName)}</h2>
+    <div className="tilt-container" id={result.index} onClick={handleClick}>
+      <div className="zone top-left"></div>
+      <div className="zone top-right"></div>
+      <div className="zone bottom-left"></div>
+      <div className="zone bottom-right"></div>
+      <div className="zone top-middle"></div>
+      <div className="zone bottom-middle"></div>
+      <div className="card">
+        <img src={result.image} alt="" />
+        <div className="text">
+          <h2>{getFullName(result.fullName)}</h2>
+        </div>
       </div>
     </div>
   );

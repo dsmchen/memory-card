@@ -2,17 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
   background: var(--white);
   border-radius: 1rem;
   box-shadow: 5px 5px 10px var(--gray-400);
-  will-change: transform;
-  transition: transform 450ms;
-}
-
-.card:hover {
-  transition: transform 150ms;
-  transform: translateY(-10px);
 }
 
 .card img {
@@ -29,8 +21,102 @@
   padding: 1rem;
 }
 
+/* 3D tilt effect */
+:root {
+  --rotation: 10deg;
+}
+
+.tilt-container {
+  position: relative;
+  perspective: 1000px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.tilt-container:hover {
+  transform: scale(1.02);
+}
+
+.tilt-container .card {
+  transition:
+    transform 0.7s cubic-bezier(0, 0, 0, 1),
+    box-shadow 0.7s;
+}
+
+/* Invisible hover zones */
+.tilt-container .zone {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  z-index: 2;
+}
+
+.tilt-container .top-left {
+  top: 0;
+  left: 0;
+}
+.tilt-container .top-left:hover ~ .card {
+  transform: rotate3d(-1, 1, 0, var(--rotation));
+  box-shadow: 5px -5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tilt-container .top-right {
+  top: 0;
+  right: 0;
+}
+.tilt-container .top-right:hover ~ .card {
+  transform: rotate3d(-1, -1, 0, var(--rotation));
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tilt-container .bottom-left {
+  bottom: 0;
+  left: 0;
+}
+.tilt-container .bottom-left:hover ~ .card {
+  transform: rotate3d(1, 1, 0, var(--rotation));
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tilt-container .bottom-right {
+  bottom: 0;
+  right: 0;
+}
+.tilt-container .bottom-right:hover ~ .card {
+  transform: rotate3d(1, -1, 0, var(--rotation));
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tilt-container .top-middle {
+  top: 0;
+  bottom: 50%;
+  left: 35%;
+  right: 35%;
+  width: auto;
+  height: auto;
+}
+.tilt-container .top-middle:hover ~ .card {
+  transform: rotate3d(-1, 0, 0, var(--rotation));
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tilt-container .bottom-middle {
+  top: 50%;
+  bottom: 0;
+  left: 35%;
+  right: 35%;
+  width: auto;
+  height: auto;
+}
+.tilt-container .bottom-middle:hover ~ .card {
+  transform: rotate3d(1, 0, 0, var(--rotation));
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .card {
-    transition: none;
+  .tilt-container .card,
+  .tilt-container {
+    transition: none !important;
+    transform: none !important;
   }
 }
