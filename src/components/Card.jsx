@@ -30,18 +30,25 @@ export default function Card({
     }
   }
 
-  function getFullName(fullName) {
+  function formatName(fullName) {
     switch (fullName) {
       case 'Harry James Potter':
-        return 'Harry Potter';
+        fullName = 'Harry Potter';
+        break;
       case 'Hermione Jean Granger':
-        return 'Hermione Granger';
+        fullName = 'Hermione Granger';
+        break;
       case 'Albus Percival Wulfric Brian Dumbledore':
-        return 'Albus Dumbledore';
-      default:
-        return fullName;
+        fullName = 'Albus Dumbledore';
+        break;
     }
+
+    fullName = fullName.split(' ');
+
+    return fullName;
   }
+
+  const formattedName = formatName(result.fullName);
 
   return (
     <div className="tilt-container" id={result.index} onClick={handleClick}>
@@ -54,7 +61,11 @@ export default function Card({
       <div className="card">
         <img src={result.image} alt="" />
         <div className="text">
-          <h2>{getFullName(result.fullName)}</h2>
+          <h2>
+            {formattedName[0]}
+            <br />
+            {formattedName[1]}
+          </h2>
         </div>
       </div>
     </div>
