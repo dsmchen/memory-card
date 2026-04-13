@@ -31,4 +31,3 @@ A memory card game using React and vanilla CSS. For more information, please go 
 
 - [PotterAPI](https://github.com/fedeperin/potterapi)
 - [Stack Overflow - How to randomize (shuffle) a JavaScript array?](https://stackoverflow.com/a/2450976)
-
