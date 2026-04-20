@@ -9,7 +9,7 @@
 }
 
 .gameboard .heading-container {
-  grid-column: span 2;
+  grid-column: 1 / -1;
 }
 
 .gameboard .loading {
@@ -36,10 +36,6 @@
   .gameboard {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .gameboard .heading-container {
-    grid-column: span 3;
-  }
 }
 
 /*
@@ -49,10 +45,6 @@
 @media screen and (width >= 70em) {
   .gameboard {
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .gameboard .heading-container {
-    grid-column: span 4;
   }
 }
 

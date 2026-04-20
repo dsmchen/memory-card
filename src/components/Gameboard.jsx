@@ -2,6 +2,7 @@ import '../styles/Gameboard.css';
 import useData from '../hooks/useData';
 import shuffle from '../utils/shuffle';
 import Card from './Card';
+import Scoreboard from './Scoreboard';
 
 export default function Gameboard({
   difficulty,
@@ -48,7 +49,15 @@ export default function Gameboard({
           )}
         </div>
       )}
-      {results && <>{cards}</>}
+      {results && (
+        <>
+          <Scoreboard
+            selectedCards={selectedCards}
+            highestScore={highestScore}
+          />
+          {cards}
+        </>
+      )}
     </div>
   );
 }

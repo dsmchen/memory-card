@@ -2,7 +2,6 @@ import './styles/App.css';
 import { useState } from 'react';
 import Header from './components/Header';
 import SelectDifficulty from './components/SelectDifficulty';
-import Scoreboard from './components/Scoreboard';
 import Gameboard from './components/Gameboard';
 import GameOver from './components/GameOver';
 
@@ -24,21 +23,15 @@ function App() {
             setShowSelectDifficulty={setShowSelectDifficulty}
           />
         ) : !isGameOver ? (
-          <>
-            <Scoreboard
-              selectedCards={selectedCards}
-              highestScore={highestScore}
-            />
-            <Gameboard
-              difficulty={difficulty}
-              selectedCards={selectedCards}
-              setSelectedCards={setSelectedCards}
-              setIsGameOver={setIsGameOver}
-              setIsWin={setIsWin}
-              highestScore={highestScore}
-              setHighestScore={setHighestScore}
-            />
-          </>
+          <Gameboard
+            difficulty={difficulty}
+            selectedCards={selectedCards}
+            setSelectedCards={setSelectedCards}
+            setIsGameOver={setIsGameOver}
+            setIsWin={setIsWin}
+            highestScore={highestScore}
+            setHighestScore={setHighestScore}
+          />
         ) : (
           <GameOver
             selectedCards={selectedCards}
