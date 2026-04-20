@@ -13,7 +13,7 @@ export default function Gameboard({
   setHighestScore,
 }) {
   const url = `https://potterapi-fedeperin.vercel.app/en/characters?max=${difficulty}`;
-  const results = useData(url);
+  const { data: results, error, loading } = useData(url);
   const cards = [];
 
   if (results) {
@@ -37,13 +37,18 @@ export default function Gameboard({
 
   return (
     <div className="gameboard">
-      {!results ? (
+      {(error || loading) && (
         <div className="heading-container">
-          <h2 className="loading">Loading...</h2>
+          {loading && <h2 className="loading">Loading...</h2>}
+          {error && (
+            <>
+              <h2>Sorry, something went wrong.</h2>
+              <p>Please try again later.</p>
+            </>
+          )}
         </div>
-      ) : (
-        <>{cards}</>
       )}
+      {results && <>{cards}</>}
     </div>
   );
 }
