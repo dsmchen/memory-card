@@ -30,6 +30,17 @@
 
 .card h2 {
   padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/*
+  Tablet
+*/
+
+@media screen and (width >= 40em) {
+  .card h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* 3D tilt effect */

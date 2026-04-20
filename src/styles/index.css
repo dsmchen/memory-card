@@ -55,7 +55,7 @@ h1 {
     'Times New Roman',
     Times,
     serif;
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 1;
 }
 
@@ -200,4 +200,14 @@ button.primary:active .front {
 button.secondary {
   border: none;
   background: none;
+}
+
+/*
+  Tablet
+*/
+
+@media screen and (width >= 40em) {
+  h1 {
+    font-size: 6rem;
+  }
 }
