@@ -10,6 +10,9 @@
 
 .gameboard .heading-container {
   grid-column: span 2;
+}
+
+.gameboard .loading {
   animation: scale 1s infinite;
 }
 
@@ -50,5 +53,11 @@
 
   .gameboard .heading-container {
     grid-column: span 4;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gameboard .loading {
+    animation: none;
   }
 }
