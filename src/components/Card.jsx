@@ -51,7 +51,15 @@ export default function Card({
   const formattedName = formatName(result.fullName);
 
   return (
-    <div className="tilt-container" id={result.index} onClick={handleClick}>
+    <div
+      className="tilt-container"
+      id={result.index}
+      onClick={handleClick}
+      tabindex="0"
+      onKeyUp={(e) => {
+        if (e.key === 'Enter') handleClick(e);
+      }}
+    >
       <div className="zone top-left"></div>
       <div className="zone top-right"></div>
       <div className="zone bottom-left"></div>
